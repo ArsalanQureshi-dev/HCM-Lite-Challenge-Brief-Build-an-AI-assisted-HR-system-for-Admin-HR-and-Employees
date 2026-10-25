@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>HCM Lite - HR & Payroll System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="app">
+
+<!-- Login / Setup / Reset Container (Visible when not logged in) -->
+<div id="authContainer" class="auth">
+  <section class="auth-showcase" aria-label="HCM Lite people management illustration">
+    <svg class="auth-illustration" viewBox="0 0 520 440" role="img" aria-labelledby="authImageTitle authImageDesc">
+      <title id="authImageTitle">HCM Lite people management</title>
+      <desc id="authImageDesc">An illustration of a team beside an employee management dashboard.</desc>
+      <defs>
+        <linearGradient id="authPanel" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#0f9d8a"/>
+          <stop offset="1" stop-color="#5b4fcf"/>
+        </linearGradient>
+      </defs>
+      <circle cx="260" cy="220" r="190" fill="url(#authPanel)" opacity=".12"/>
+      <rect x="135" y="74" width="285" height="220" rx="22" fill="#fff" stroke="#e4e8f1" stroke-width="3"/>
+      <rect x="158" y="98" width="110" height="12" rx="6" fill="#1f2a44"/>
+      <rect x="158" y="124" width="238" height="54" rx="12" fill="#f3f5fa"/>
+      <circle cx="184" cy="151" r="14" fill="#0f9d8a" opacity=".2"/>
+      <path d="M179 151h10m-5-5v10" stroke="#0f9d8a" stroke-width="3" stroke-linecap="round"/>
+      <rect x="208" y="141" width="94" height="8" rx="4" fill="#1f2a44" opacity=".8"/>
+      <rect x="208" y="155" width="64" height="6" rx="3" fill="#68738f" opacity=".55"/>
+      <rect x="158" y="190" width="238" height="78" rx="12" fill="#f3f5fa"/>
+      <path d="M176 244l29-22 28 11 35-27 26 16 37-28 37 17" fill="none" stroke="#0f9d8a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M176 254h201" stroke="#e4e8f1" stroke-width="2"/>
+      <rect x="194" y="317" width="62" height="74" rx="22" fill="#5b4fcf"/>
+      <circle cx="225" cy="293" r="28" fill="#f2b68f"/>
+      <path d="M197 292c1-24 13-38 31-38 19 0 30 13 31 35-10-8-18-13-30-13-10 0-19 6-32 16z" fill="#1f2a44"/>
+      <path d="M188 391v-22c0-20 15-35 37-35s37 15 37 35v22" fill="#5b4fcf"/>
+      <rect x="286" y="326" width="62" height="65" rx="22" fill="#0f9d8a"/>
+      <circle cx="317" cy="303" r="27" fill="#d99570"/>
+      <path d="M290 302c0-22 10-36 28-36 20 0 30 14 29 37-8-9-17-14-29-14-10 0-19 5-28 13z" fill="#493227"/>
+      <path d="M280 391v-17c0-20 15-34 37-34s37 14 37 34v17" fill="#0f9d8a"/>
+      <circle cx="116" cy="144" r="14" fill="#e8962b" opacity=".8"/>
+      <circle cx="422" cy="331" r="11" fill="#5b4fcf" opacity=".55"/>
+      <path d="M91 280l12 12m0-12l-12 12" stroke="#e8962b" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <h1>People are your greatest asset.</h1>
+    <p>Manage your team, attendance, leave and payroll in one simple place.</p>
+  </section>
+  <section class="auth-side">
+    <div class="auth-card" id="authbox"></div>
+  </section>
+</div>
+
+<!-- Main App Workspace (Mounted dynamically when logged in) -->
+<main id="page" style="display:none"></main>
+
+<!-- Vanilla HTML, CSS & JavaScript Scripts -->
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/leave.js"></script>
+<script src="js/attendance.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/employees.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
